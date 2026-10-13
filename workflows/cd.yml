@@ -17,5 +17,5 @@ jobs:
         needs: job1
         runs-on: ubuntu-latest
         steps:
-            -  name: welcome
+            -  name: welcome to job2
                run: echo  "ahmed eid"           
