@@ -1,0 +1,21 @@
+name: Ahmed demo ci/cd
+
+on:
+    push:
+         branches: ["main","master"]
+    pull_request:
+         branches: ["main","master"]
+          
+
+jobs:
+    job1:
+        runs-on: ubuntu-latest
+        steps:
+            -  name: welcome
+               run: echo  "hello world"
+    job2:
+        needs: job1
+        runs-on: ubuntu-latest
+        steps:
+            -  name: welcome
+               run: echo  "ahmed eid"           
